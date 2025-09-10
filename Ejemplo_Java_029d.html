@@ -1,0 +1,38 @@
+<html>
+  <script language="JavaScript">
+    //   Ejemplo_Java_029d.html
+    var a;
+    var x, y;
+    var salida = "";
+    salida = salida + "5 números aleatorios entre 0 y 1\n";
+    for (i = 1; i <= 5; i++) {
+      salida = salida + Math.random() + "\n";
+    }
+    salida = salida + "\n\n5 números aleatorios entre 3 y 7\n";
+    for (i = 1; i <= 5; i++) {
+      salida = salida + (Math.round(7 - 3) * Math.random() + 3) + "\n";
+    }
+    salida = salida + "\n\n5 números aleatorios entre 15 y 70\n";
+    for (i = 1; i <= 5; i++) {
+      salida = salida + (Math.round(70 - 15) * Math.random() + 15) + "\n";
+    }
+    alert(salida);
+    alert("Vamos a ver 5 números aleatorios entre los dos\nque tú quieras");
+    x = parseFloat(prompt("Escribe el número menor (puede ser decimal)", ""));
+    y = parseFloat(prompt("Escribe el número mayor (puede ser decimal)", ""));
+    salida = "";
+    salida = salida + "5 números aleatorios entre " + x + " y " + y + "\n\n\n";
+    for (i = 1; i <= 5; i++) {
+      a = Math.round(y - x) * Math.random() + x;
+      salida = salida + a + "\n";
+    }
+    alert(salida);
+    /* Si quieres números aleatorios enteros bastacambiar los paréntesis de la siguiente forma:Math.round((y-x)*Math.random()+x) */ salida =
+      "";
+    salida = salida + "150 números enteros aleatorios entre 2 y 17\n";
+    for (i = 1; i <= 150; i++) {
+      salida = salida + Math.round((17 - 2) * Math.random() + 2) + " - ";
+    }
+    alert(salida);
+  </script>
+</html>

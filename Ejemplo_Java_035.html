@@ -1,0 +1,20 @@
+<html>
+  <script language="JavaScript">
+    //  Ejemplo_Java_035.html
+    // Cálculo de factoriales var fin;
+    var num = 2;
+    var fact;
+    var solucion = "";
+    fin = prompt("Factoriales hasta el número?", "");
+    fin = parseFloat(fin);
+    while (num <= fin) {
+      fact = 1;
+      for (i = 1; i <= num; i++) {
+        fact = fact * i;
+      }
+      solucion = solucion + " - " + fact;
+      num++;
+    }
+    alert(solucion);
+  </script>
+</html>

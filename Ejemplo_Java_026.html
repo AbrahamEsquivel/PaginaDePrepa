@@ -1,0 +1,24 @@
+<html>
+  <script language="JavaScript">
+    //  Ejemplo_Java_026.html
+    var opcion = "S";
+    var cat1, cat2, hipo;
+    while (opcion == "S" || opcion == "s") {
+      cat1 = prompt("Escribe el valor de un cateto", "");
+      cat2 = prompt("Escribe el valor del otro cateto", "");
+      cat1 = parseFloat(cat1);
+      cat2 = parseFloat(cat2);
+      hipo = Math.sqrt(cat1 * cat1 + cat2 * cat2);
+      alert(
+        "La hipotenusa del triángulo de catetos " +
+          cat1 +
+          " y " +
+          cat2 +
+          " es " +
+          hipo
+      );
+      opcion = prompt("¿Quieres calcular otra hipotenusa? (S/N)", "");
+    }
+    alert("Adiós muy buenas");
+  </script>
+</html>

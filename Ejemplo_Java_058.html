@@ -1,0 +1,16 @@
+<html>
+  <script language="JavaScript">
+    //  Ejemplo_Java_058.html
+    /* Programa que determina el número de "a" o "A" que aparece en un texto */
+    var texto;
+    texto = prompt("Escribe el texto que quieras:", "");
+    alert("Número de a y de A = " + BuscaLetra(texto));
+    function BuscaLetra(x) {
+      var numero = 0;
+      for (i = 0; i < x.length; i++) {
+        if (x.charAt(i) == "a" || x.charAt(i) == "A") numero++;
+      }
+      return numero;
+    }
+  </script>
+</html>

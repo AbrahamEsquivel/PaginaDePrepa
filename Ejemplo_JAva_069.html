@@ -1,0 +1,17 @@
+HTML>
+<!-- Ejemplo_Java_067.html //-->
+
+<HEAD>
+    <SCRIPT
+        LANGUAGE="JavaScript">function valores(x1, x2, paso) { var y; var salida = ""; x1 = parseFloat(x1); x2 = parseFloat(x2); paso = parseFloat(paso); for (i = x1; i <= x2; i = i + paso) { y = i * i - 5 * i + 10; salida = salida + "x= " + i + "  y=" + y + "<BR>"; } document.write(salida); } </SCRIPT>
+</HEAD>
+
+<BODY>
+    <FORM></FORM>Primer o mínimo valor de X:<INPUT TYPE="text" NAME="min"> <BR>Último o máximo valor de X:<INPUT
+        TYPE="text" NAME="max"><BR>Incremento o Variación entre los valores de X: <INPUT TYPE="text" NAME="incr"> <BR>
+    <HR><INPUT TYPE="button" VALUE="Tabla de Valores"
+        onClick="valores(document.forms[0].min.value,document.forms[0].max.value,document.forms[0].incr.value);">
+    <HR><BR></FORM>
+</BODY>
+
+</HTML>

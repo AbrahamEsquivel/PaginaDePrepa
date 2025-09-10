@@ -1,0 +1,13 @@
+body {background-color: gray;}
+
+.caja1{
+    background-color: white;
+    width: 400px;
+    height: 500px;    
+    border-radius: 20px;
+    margin: auto;
+    padding: 8px;
+    margin-top: 50px;
+
+    }
+

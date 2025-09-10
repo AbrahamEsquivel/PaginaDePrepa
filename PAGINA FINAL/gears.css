@@ -1,0 +1,346 @@
+	*{
+	margin: o;
+	padding: o;
+	text-decoration: none;
+	font-family: arial;
+}
+
+body{
+margin-left: 80px;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background: darkred;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 200;
+
+}
+
+
+
+.icon__menu{
+	width: 90px;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	transform: translateX(10px);
+
+}
+.icon__menu i{
+	font-size: 40px;
+	cursor: pointer;
+	position: absolute;
+	z-index: 900px;
+
+}
+
+.menu_side{
+	width: 80px;
+	height: 100%;
+	background: yellow;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: black;
+	font-size: 18px;
+	z-index: 200;
+	overflow: hidden;
+	border-right: 20px solid yellow;
+
+}
+
+.nombre_pagina{
+	padding:  20px 2.5px;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	cursor: pointer;
+
+}
+
+.opcion_menu{
+	padding: 20px 30px;
+	position: absolute;
+
+}
+
+.opcion_menu a{
+	display: block;
+	position: relative;
+	transition: color 200ms;
+	
+}
+
+.opcion_menu a:hover{
+	color: red;
+
+}
+
+.opcion_menu .opciones{
+	padding: 20px 10px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.opcion_menu .opciones i{
+	width: 20px;
+	margin-right: 20px;
+}
+
+
+
+
+/*/fin/*/
+
+.opcion_menu .opciones h4{
+	font-weight: 300;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.texto-justificado{
+	text-align: justify;
+}
+
+
+
+p{
+	font: 100% Gears of Peace;
+}
+font{
+	font: 150% Gears of Peace;
+
+}
+h2{
+	font: 150% Gears of Peace;
+}
+.MENU nav ul{
+
+	display: flex;
+}
+
+.MENU nav ul li{
+
+	list-style: none;
+	padding: 0px 60px;
+
+}
+
+
+.MENU nav ul li a{
+
+	font-size: 16px;
+	text-decoration: none;
+	color: white ;
+	transition: opacity 300ms;
+
+}
+
+.MENU nav ul li a:hover{
+	opacity: 0.6;
+}
+
+/*/submenu/*/
+
+ nav ul li ul{
+ 	width: 200px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	background: gray;
+ 	position: absolute;
+ 	top: 50px;
+ 	padding: 14px 0px;
+ 	visibility: hidden;
+ 	opacity: 0px;
+ 	z-index: 400;
+ 	transition: all 300ms ease;
+
+
+ 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+ }
+  nav ul li:hover ul{
+  	visibility: visible;
+  	opacity: 1;
+  	top: 45px;
+  }
+
+   nav ul li ul: before{
+   	content: ´´;
+   	width: 0;
+   	height: 0;
+   	border-left: 12px solid transparent;
+   	border-right: 12px solid transparent;
+   	border-bottom: 12px solid white;
+   	position: absolute;
+   	top: -12px ;
+   	left: 20px;
+   	
+   }
+
+
+
+.MENU i{
+color: white;
+font-size: 15px;
+position: absolute;
+margin-left: 8px;
+}
+
+.caja1{
+    background-color: white;
+    width: 1000px;
+    height: 500px;    
+    margin: auto;
+    padding: 8px;
+    margin-top: 100px;
+
+}
+
+.caja1 p{
+	margin-left: 40px;
+	vertical-align: text-top;
+	display: inline-block;
+}
+
+.foto1{
+	padding: 10px;
+	margin: 10px;
+	border: 0px solid black;
+	float: left;
+	width: 250px;
+}
+
+.foto2{
+	padding: 10px;
+	margin: 10px;
+	border: 0px solid black;
+	float: left;
+	width: 250px;
+}
+
+.foto3{
+	padding: 10px;
+	margin: 10px;
+	border: 0px solid black;
+	float: left;
+	width: 250px;
+}
+
+.foto4{
+	padding: 10px;
+	margin: 10px;
+	border: 0px solid black;
+	float: left;
+	width: 250px;
+}
+
+.foto5{
+	padding: 10px;
+	
+	border: 0px solid black;
+	float: right;
+	width: 250px;
+}
+
+.foto6{
+	padding: 10px;
+	
+	border: 0px solid black;
+	float: right;
+	width: 250px;
+}
+
+
+/*/ CAJA/*/
+
+.contenedor__box1{
+	max-width: 800px;
+	margin: auto;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap:wrap ;
+	justify-content: space-evenly;
+}
+
+.caja2{
+    background-color: black;
+    width: 870px;
+    height: 500px;    
+    border-radius: 20px;
+    margin: auto;
+    padding: 8px;
+    margin-top: 50px;
+
+    }
+    
+    .box1{
+	width: 200px;
+	height: 200px;
+	background: black;
+	margin: 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+
+}
+
+.box1:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
+
+}
+
+.box1 i{
+	font-size: 40px;
+	color: blue;
+}
+
+.box1 img{
+	align-content: left;
+}
+
+
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	transition: all 500ms ease;
+
+}
+
+.contenedor{
+	width: 400px;
+	height: 300px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+	transition: all 500ms ease;
+
+}
+
+.contenedor header{
+	padding: 10px;
+	background: #db8046;
+	color: #fff;
+
+}
+
+.contenedor label{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+
+}

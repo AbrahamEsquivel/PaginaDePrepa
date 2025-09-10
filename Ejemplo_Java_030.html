@@ -1,0 +1,16 @@
+<html>
+  <script language="JavaScript">
+    //  Ejemplo_Java_030.html
+    var salida = "";
+    for (x = 5; x < 15; x++) {
+      if (x == 8) break;
+      salida = salida + x + " \n";
+    }
+    salida = salida + "\n\n";
+    for (x = 5; x < 15; x++) {
+      if (x == 8) continue;
+      salida = salida + x + "\t";
+    }
+    alert(salida);
+  </script>
+</html>

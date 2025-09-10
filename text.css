@@ -1,0 +1,19 @@
+#capa1, #capa2, #capa3, #capa4{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+    border: solid1px   #840;
+    background: yellow;
+    float: left;
+    overflow: visible;
+}
+#capa2{
+    overflow: hidden;
+}
+#capa3{
+    overflow: scroll;
+}
+#capa4{
+    overflow: auto;
+}
