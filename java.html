@@ -1,16 +1,37 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-      <title>PAGINAS DE JAVA</title>
-  </head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Java</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
 
-<frameset rows="100,*">
-<frame name="alto" src="super.html">
+    <header>
+        <h1 id="titulo-principal">Cargando...</h1>
+    </header>
 
-<frameset cols="250,*">
-<frame name="mizq" src="marco_izqui.html">
-<frame name="central" src="central_1.html">
-</frameset>
+    <div class="contenedor-principal">
+        
+        <aside id="menu-lateral" style="background: #1a1a1a; color: white; width: 250px; overflow-y: scroll;">
+            </aside>
 
-</frameset>
-<noframes>
+        <main id="visor-contenido" style="flex: 1; padding: 40px;">
+    <h2>Resultado del Ejercicio:</h2>
+    
+    <div id="consola" style="background: #000; color: #0f0; padding: 20px; font-family: monospace; border-radius: 5px; min-height: 200px; white-space: pre-wrap;">
+        // Aquí aparecerá la ejecución...
+    </div>
+
+    <button onclick="limpiarConsola()" style="margin-top:10px; padding:5px 10px;">Limpiar Pantalla</button>
+</main>
+
+    </div>
+
+    <script src="js/datos-java.js"></script>
+    
+    <script src="js/motor.js"></script>
+
+</body>
+</html>

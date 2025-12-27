@@ -1,5 +1,7 @@
 
-const listaDeGuias = [
+const tituloPagina = "EJERCICIOS GENERALES";
+
+const listaContenido = [
     {
         id: 1,
         titulo: "Regresar al Índice",

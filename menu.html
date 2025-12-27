@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recopilatorio de Guías</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercicios Java</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
 
     <header>
-        <h1>PAGINA RECOPILATORIA</h1>
+        <h1 id="titulo-principal">Cargando...</h1>
     </header>
 
     <div class="contenedor-principal">
         
-        <aside id="menu-lateral">
+        <aside id="menu-lateral" style="background: #1a1a1a; color: white; width: 250px; overflow-y: scroll;">
             </aside>
 
-        <main id="visor-contenido">
-            <h2>Bienvenido</h2>
-            <p>Selecciona una guía del menú para leerla.</p>
+        <main id="visor-contenido" style="flex: 1; padding: 40px; overflow-y: scroll;">
+            <h2>Selecciona un ejercicio</h2>
+            <p>👈 Elige un código del menú lateral para visualizarlo.</p>
         </main>
 
     </div>
 
-    <script src="js/contenido.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/datos-guias.js"></script>
+    
+    <script src="js/motor.js"></script>
+
 </body>
 </html>
