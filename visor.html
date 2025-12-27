@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Visor de Maquetación</title>
+    <link rel="stylesheet" href="css/maquetacion-master.css">
+</head>
+<body data-tema="1"> <a href="maquetacion.html" style="position:fixed; top:20px; left:20px;">⬅ Volver</a>
+
+   <div id="contenedor2">
+    <div id="cabecera2"><h1>CABECERA</h1></div>
+    
+    <div id="cuerpo2">
+        <div id="izquierda2">Izquierda</div>
+        
+        <div id="centro2">Centro (Solo temas 4 y 5)</div>
+        
+        <div id="derecha2">Derecha</div>
+    </div>
+    
+    <div id="pie2">PIE DE PÁGINA</div>
+</div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const idTema = params.get('id');
+
+        if (idTema) {
+            document.body.setAttribute('data-tema', idTema);
+            document.getElementById('titulo').innerText = "Viendo Maquetación " + idTema;
+        }
+    </script>
+
+</body>
+</html>

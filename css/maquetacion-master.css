@@ -1,0 +1,112 @@
+/* =========================================
+   1. ESTILOS BASE (Comunes para todas)
+   ========================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #fff; /* Fondo general */
+}
+
+#contenedor2 {
+    margin: 0 auto;
+    text-align: center;
+    /* El ancho y color de fondo cambian por tema */
+}
+
+#cabecera2 {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+
+#cuerpo2 {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+/* Configuraciones genéricas de columnas */
+#izquierda2, #centro2, #derecha2 {
+    text-align: center; /* Por defecto */
+    min-height: 80vh; /* Para que se vean aunque estén vacíos */
+}
+
+/* El centro solo existe en maquetas 4 y 5, así que lo ocultamos por defecto */
+#centro2 {
+    display: none; 
+}
+
+#pie2 {
+    clear: both; /* Importante para limpiar los floats */
+    margin-top: 10px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 8pt;
+}
+
+/* =========================================
+   2. TEMA 1: Dos columnas (Izq fija, Der fluida)
+   Colores: Cabecera Verde, Pie Amarillo
+   ========================================= */
+body[data-tema="1"] #contenedor2 { width: 80%; background-color: #f5f5f5; }
+body[data-tema="1"] #cabecera2   { background-color: green; }
+body[data-tema="1"] #izquierda2  { float: left; width: 300px; background-color: red; font-size: 10pt; }
+body[data-tema="1"] #derecha2    { margin-left: 320px; background-color: lightskyblue; font-size: 12pt; }
+body[data-tema="1"] #pie2        { background-color: yellow; }
+
+
+/* =========================================
+   3. TEMA 2: Dos columnas flotantes (%)
+   Colores: Cabecera Verde, Pie Amarillo
+   ========================================= */
+body[data-tema="2"] #contenedor2 { width: 80%; background-color: #f5f5f5; }
+body[data-tema="2"] #cabecera2   { background-color: green; }
+body[data-tema="2"] #izquierda2  { float: left; width: 69%; background-color: red; font-size: 12pt; text-align: justify; }
+body[data-tema="2"] #derecha2    { float: left; width: 29%; margin-left: 10px; background-color: lightskyblue; font-size: 10pt; }
+body[data-tema="2"] #pie2        { background-color: yellow; }
+
+
+/* =========================================
+   4. TEMA 3: Invertido (Derecha fija a la izq visualmente)
+   Colores: Cabecera Verde, Pie Amarillo
+   ========================================= */
+body[data-tema="3"] #contenedor2 { width: 80%; background-color: #f5f5f5; }
+body[data-tema="3"] #cabecera2   { background-color: green; }
+/* Nota: En tu CSS original 'izquierda2' tenía float right. Mantenemos esa lógica */
+body[data-tema="3"] #izquierda2  { float: right; width: 300px; background-color: red; font-size: 10pt; }
+body[data-tema="3"] #derecha2    { margin-right: 320px; background-color: lightskyblue; font-size: 12pt; }
+body[data-tema="3"] #pie2        { background-color: yellow; }
+
+
+/* =========================================
+   5. TEMA 4: Tres columnas (Izq fija, Centro fijo, Der fluida)
+   Colores: Cabecera Amarilla, Pie Marrón
+   ========================================= */
+body[data-tema="4"] #contenedor2 { width: 90%; background-color: #ffffff; }
+body[data-tema="4"] #cabecera2   { background-color: yellow; }
+
+body[data-tema="4"] #izquierda2  { float: left; width: 250px; background-color: red; font-size: 10pt; }
+/* Activamos el centro */
+body[data-tema="4"] #centro2     { display: block; float: left; width: 500px; margin-left: 10px; background-color: green; font-size: 12pt; text-align: justify; }
+body[data-tema="4"] #derecha2    { margin-left: 770px; background-color: #0040ff; font-size: 10pt; }
+
+body[data-tema="4"] #pie2        { background-color: brown; color: yellow; }
+
+
+/* =========================================
+   6. TEMA 5: Tres columnas flotantes (Ancho fijo 998px)
+   Colores: Cabecera Amarilla, Pie Marrón
+   ========================================= */
+body[data-tema="5"] #contenedor2 { width: 998px; background-color: #ffffff; }
+body[data-tema="5"] #cabecera2   { background-color: yellow; }
+
+body[data-tema="5"] #izquierda2  { float: left; width: 180px; background-color: red; font-size: 10pt; }
+/* Activamos el centro */
+body[data-tema="5"] #centro2     { display: block; float: left; width: 60%; margin-left: 10px; background-color: green; font-size: 12pt; text-align: justify; }
+body[data-tema="5"] #derecha2    { float: left; width: 18%; margin-left: 10px; background-color: #0040ff; font-size: 10pt; }
+
+body[data-tema="5"] #pie2        { background-color: brown; color: yellow; }

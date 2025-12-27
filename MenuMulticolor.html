@@ -1,74 +1,278 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>    
-<meta charset="utf-8" />        
- <title>CSS3 multicolor menu | Script Tutorials</title>           
- <link href="css/menu.css" rel="stylesheet" type="text/css" />     
-</head>  <head>
-<body>        
-    <header>            
-    	<h2>Menú Multicolor en CSS3</h2>              
-    	 <a href="https://www.google.com.mx/?gws_rd=ssl#q=men%C3%BAs+en+css3&*"   target="_blank" class="stuts">puedes encontrar muchos ejemplos en internet <span>Google</span></a> 
-    	  </header>        
-    	  <div  class="container"> 
-    	  	<span   id="red"></span>           
-    	  	 <span   id="orange"></span>           
-    	  	  <span   id="pink"></span>           
-    	  	   <span   id="green"></span>            
-    	  	   <span   id="blue"></span>            
-    	  	   	<span   id="indigo"></span>            
-    	  	   		<span   id="violet"></span>            
-    	  	   			<span   id="grey"></span>
-    	  	   			<div    class="colorScheme">                
-    	  	   			<a href="#red" class="red"></a>                
-    	  	   			<a href="#orange" class="orange"></a>                 
-    	  	   			<a href="#pink" class="pink"></a>                 
-    	  	   			<a href="#green" class="green"></a>                
-    	  	   			<a href="#blue" class="blue"></a>                 
-    	  	   			<a href="#indigo" class="indigo"></a>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Menú Multicolor CSS3</title>
+   
+    
+    <style>
 
-    	  	   			<a href="#violet" class="violet"></a>               
-    	  	   			<a href="#grey" class="grey"></a>             
-    	  	   			</div  > 
-    	  	   			<ul id ="nav">                
-    	  	   				<li><a href="sub-menu.html">INDICE</a></li>                 
-    	  	   					<li><a class="hsubs" href="#">Menu 1</a>                    
-    	  	   					<ul class="subs">
+        * {
+            box-sizing: border-box;
+        }
 
-    	  	   					<li><a href="#">Submenu 1</a></li>            
-    	  	   					 <li><a href="#" >Submenu 2 </a></li>                         
-    	  	   					 <li><a href="#" >Submenu 3</a></li>                        
-    	  	   					 <li><a href="#" >Submenu 4</a></li>                         
-    	  	   					 <li><a href="#" >Submenu 5</a></li> 
-    	  	   					  </ul>                
-    	  	   					     </li>                
-    	  	   					     <li><a class="hsubs" href="#">Menu 2</a>                   
-    	  	   					     <ul class="subs">
-    	  	   					     	<li><a href="#" >Submenu 2-1</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 2-2</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 2-3</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 2-4</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 2-5</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 2-6</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 2-7</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 2-8</a></li>                     
-    	  	   					     	</ul>
-    	  	   					     </li>                 
-    	  	   					     <li><a class="hsubs" href="#">Menu 3</a>                     
-    	  	   					     	<ul class="subs">                        
-    	  	   					     	<li><a href="#" >Submenu 3-1</a></li>                        
-    	  	   					     	<li><a href="#" >Submenu 3-2</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 3-3</a></li>                        
-    	  	   					     	<li><a href="#" >Submenu 3-4</a></li>                         
-    	  	   					     	<li><a href="#" >Submenu 3-5</a></li>                     
-    	  	   					     	</ul> 
-    	  	   					     </li>                 
-    	  	   					     <li><a href ="#"  >Menu 4</a></li>                
-    	  	   					     <li><a href ="#">Menu 5</a></li>                
-    	  	   					     <li><a href ="#"  >Menu 6</a></li>                
-    	  	   					                  
-    	  	   					     </ul> 
-    	  	   					     </div>     
-    	  	   					 </body>
-    	  	   					 </html>
-    	  	   					 
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .stuts {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .stuts:hover {
+            color: #000;
+        }
+
+        .stuts span {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .colorScheme {
+            list-style: none;
+            margin: 0 auto 30px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .colorScheme a {
+            cursor: pointer;
+            display: block;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid white;
+        }
+
+        .colorScheme a:hover {
+            transform: scale(1.2);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+        }
+
+        .colorScheme .red { background-color: #e74c3c; }
+        .colorScheme .orange { background-color: #f39c12; }
+        .colorScheme .pink { background-color: #ff9ff3; }
+        .colorScheme .green { background-color: #2ecc71; }
+        .colorScheme .blue { background-color: #3498db; }
+        .colorScheme .indigo { background-color: #8e44ad; }
+        .colorScheme .violet { background-color: #9b59b6; }
+        .colorScheme .grey { background-color: #95a5a6; }
+
+
+        #nav, #nav ul {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav {
+            background-color: #2c3e50;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: table;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        #nav > li {
+            float: left;
+            position: relative;
+        }
+
+        #nav > li > a {
+            color: #FFFFFF;
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 18px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+
+        #nav ul {
+            background-color: #e74c3c;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            width: 200px;
+            z-index: 100;
+
+
+            opacity: 0;
+            visibility: hidden;
+            
+
+            transform: translateY(20px);
+            
+
+            transition: all 0.3s ease;
+        }
+
+
+        #nav li:hover ul.subs {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0); 
+        }
+
+        #nav ul li {
+            width: 100%;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        #nav ul li:last-child {
+            border-bottom: none;
+        }
+
+        #nav ul li a {
+            color: white;
+            padding: 12px 20px;
+            display: block;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        #nav ul li:hover > a {
+            background-color: rgba(0,0,0,0.1) !important;
+        }
+
+        #red:target ~ #nav ul { background-color: #e74c3c; }
+        #red:target ~ #nav > li:hover > a { background-color: #e74c3c; }
+
+        #orange:target ~ #nav ul { background-color: #f39c12; }
+        #orange:target ~ #nav > li:hover > a { background-color: #f39c12; }
+
+        #pink:target ~ #nav ul { background-color: #ff9ff3; }
+        #pink:target ~ #nav > li:hover > a { background-color: #ff9ff3; }
+
+        #green:target ~ #nav ul { background-color: #2ecc71; }
+        #green:target ~ #nav > li:hover > a { background-color: #2ecc71; }
+
+        #blue:target ~ #nav ul { background-color: #3498db; }
+        #blue:target ~ #nav > li:hover > a { background-color: #3498db; }
+
+        #indigo:target ~ #nav ul { background-color: #8e44ad; }
+        #indigo:target ~ #nav > li:hover > a { background-color: #8e44ad; }
+
+        #violet:target ~ #nav ul { background-color: #9b59b6; }
+        #violet:target ~ #nav > li:hover > a { background-color: #9b59b6; }
+
+        #grey:target ~ #nav ul { background-color: #95a5a6; }
+        #grey:target ~ #nav > li:hover > a { background-color: #95a5a6; }
+
+        .target-span { display: none; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Menú Multicolor en CSS3</h2>
+        <a href="https://www.google.com" target="_blank" class="stuts">
+            Ejemplo mejorado <span>con animación suave</span>
+        </a>
+    </header>
+
+    <div class="container">
+        <span id="red" class="target-span"></span>
+        <span id="orange" class="target-span"></span>
+        <span id="pink" class="target-span"></span>
+        <span id="green" class="target-span"></span>
+        <span id="blue" class="target-span"></span>
+        <span id="indigo" class="target-span"></span>
+        <span id="violet" class="target-span"></span>
+        <span id="grey" class="target-span"></span>
+
+        <div class="colorScheme">
+            <a href="#red" class="red" title="Rojo"></a>
+            <a href="#orange" class="orange" title="Naranja"></a>
+            <a href="#pink" class="pink" title="Rosa"></a>
+            <a href="#green" class="green" title="Verde"></a>
+            <a href="#blue" class="blue" title="Azul"></a>
+            <a href="#indigo" class="indigo" title="Indigo"></a>
+            <a href="#violet" class="violet" title="Violeta"></a>
+            <a href="#grey" class="grey" title="Gris"></a>
+        </div>
+
+        <ul id="nav">
+            <li><a href="sub-menu.html">INDICE</a></li>
+            
+            <li>
+                <a class="hsubs" href="#">Menu 1 ▾</a>
+                <ul class="subs">
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                    <li><a href="#">Submenu 3</a></li>
+                    <li><a href="#">Submenu 4</a></li>
+                    <li><a href="#">Submenu 5</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="hsubs" href="#">Menu 2 ▾</a>
+                <ul class="subs">
+                    <li><a href="#">Submenu 2-1</a></li>
+                    <li><a href="#">Submenu 2-2</a></li>
+                    <li><a href="#">Submenu 2-3</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="hsubs" href="#">Menu 3 ▾</a>
+                <ul class="subs">
+                    <li><a href="#">Submenu 3-1</a></li>
+                    <li><a href="#">Submenu 3-2</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+            <li><a href="#">Menu 6</a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
