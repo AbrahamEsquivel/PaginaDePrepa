@@ -1,0 +1,55 @@
+/* estilo.css */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #333; /* Silver oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Algerian', sans-serif; /* Respetando tu fuente original */
+}
+
+.contenedor-principal {
+    display: flex;
+    flex: 1; /* Ocupa el resto de la altura */
+    overflow: hidden; /* Evita scroll doble */
+}
+
+aside {
+    width: 250px;
+    background-color: #000;
+    color: white;
+    overflow-y: auto; /* Scroll solo en el menú si es muy largo */
+    padding: 10px;
+    border-right: 2px solid #444;
+}
+
+aside button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #222;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+aside button:hover {
+    background: #007bff;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    background-color: #f4f4f4; /* Ya no verde chillón, algo más legible */
+    overflow-y: auto; /* Scroll independiente para el contenido */
+}
